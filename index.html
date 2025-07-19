@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hóa đơn chuyển khoản Vietcombank</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 20px; }
+    .invoice {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: 50px auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    .logo { width: 150px; margin-bottom: 20px; }
+    h2 { color: #2c3e50; margin-bottom: 10px; text-align: center; }
+    .info { font-size: 15px; margin-top: 20px; }
+    .info p { margin: 6px 0; }
+    .amount { font-size: 22px; color: green; font-weight: bold; text-align: center; margin: 20px 0; }
+    .warning { color: red; font-weight: bold; text-align: center; margin-top: 10px; }
+    .footer { text-align: center; color: #888; font-size: 13px; margin-top: 30px; }
+    @media (max-width: 500px) { .invoice { padding: 15px; } }
+  </style>
+</head>
+<body>
+  <div class="invoice">
+    <div style="text-align: center;">
+      <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/4/4f/VCB_Logo.svg/320px-VCB_Logo.svg.png" class="logo" alt="Vietcombank">
+    </div>
+    <h2>HÓA ĐƠN CHUYỂN KHOẢN</h2>
+    <div class="info">
+      <p><strong>Mã giao dịch:</strong> VCB20250719120000</p>
+      <p><strong>Thời gian:</strong> 19/07/2025 – 12:00:00</p>
+      <p><strong>Tài khoản người gửi:</strong> ****6231 (Lê Minh Tâm)</p>
+      <p><strong>Tài khoản người nhận:</strong> 0121000123456 (Bạn bị troll)</p>
+      <p><strong>Ngân hàng thụ hưởng:</strong> Vietcombank</p>
+      <p><strong>Nội dung:</strong> Test prank</p>
+    </div>
+    <div class="amount">- 0 VND</div>
+    <p class="warning">Giao dịch đã hoàn tất. Không thể hoàn tác!</p>
+    <div class="footer">© 2025 Vietcombank. Email tự động – không phản hồi.</div>
+  </div>
+  <audio autoplay>
+    <source src="https://www.soundjay.com/button/sounds/beep-07.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    window.onload = () => {
+      setTimeout(() => {
+        alert("Giao dịch đã được thực hiện thành công. Bạn vừa bị trừ 0 VNĐ!");
+      }, 500);
+      setTimeout(() => {
+        window.open('', '_self').close();
+      }, 8000);
+    };
+  </script>
+</body>
+</html>
